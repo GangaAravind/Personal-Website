@@ -4,6 +4,7 @@
         <title>GANGA ARAVIND</title>
         <link rel="icon" type="image/png" href="logo1.png">
         <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
     </head>
 
     <body>
@@ -55,14 +56,18 @@
                         <img src="html.png" alt="web development" height="100px" width="100px">
                         <h3>Web Development</h3>
                         <p>Web development is the work involved in developing a website for the Internet (World Wide Web) or an intranet (a private network).</p>
-
+                        <button onclick="content()">know more</button>
+                        <p id="more">Web development refers to the creating, building, and maintaining of websites. It includes aspects such as web design, web publishing, web programming, and database management. It is the creation of an application that works over the internet i.e. websites.</p>
                     </div>
-                    <div class="box card card-1">
+                    <div class="box card card-1"> 
                         
                             <img src="paint-palette.png" alt="Design" height="100px" width="100px">
                             <h3>Design</h3>
                             <p>Developing, designing, or creating new applications, ideas, relationships, systems, or products, including artistic contributions</p>
-                        
+                        <button onclick="change()">know more</button>
+                        <p id="know">The essential skill for graphic designers is their knowledge of design principles. Whether it’s a photo editing job, print job or a digital design, knowing this set of principles really shows the designers’ skills. There’s several different graphic design principles like balance, hierarchy, alignment, repetition, contrast and more. Because it might be hard for you to assess those technical skills yourself, you might want to look for an outsourcing company that will recruit those graphic designers for you and check their technical and soft skills.
+
+                        </p>
                     </div>
                 
                 <div class="box card card-1">
@@ -70,38 +75,46 @@
                         <img src="coding.png" alt="coding" height="100px" width="100px" >
                         <h3>coding</h3>
                         <p>Coding, sometimes called computer programming.Code tells a computer what actions to take, and writing code is like creating a set of instructions</p>
-                    
+                    <button onclick="changecontent()">know more</button>
+                    <p id="know-more">A programmer or developer writes instructions describing the information and tasks needed to create a visual or to perform a task. Computers scan extensive coded manuals very quickly, executing the tasks that create and run a successful website or application. Displaying an image or section of text, changing font styles, and opening emails all require instructions included in the coded manual.
+
+                        Programming</p>
                    
                 </div>
+                
                 </section>
 
                 <section style="background-color: #1b4b54;">
                     <br>
                 <section id="forms">
-                    <div class="container">
-                        <br>
+                    <div class="container">    
+                        <div actions=""  onsubmit="return validation()">
             <h4>Let's Connect</h4>
-            <form action="">
-                <br>
+           
         <div class="form-group">
                 <label>Name:</label>
-            <input type="text">
+            <input id="name-input" type="text">
+            <p id="name-validation">Enter Name</p>
             </div>
             <br>
             <div class="form-group">
                 <label>Email:</label>
-            <input type="email">
+            <input id="email-input" type="email">
+            <p id="email-validation">Email cannot be empty</p>
             </div>
             <br>
             <div class="form-group">
 <label for="message">message:</label>
-<textarea cols="42" rows="5" tabindex="4"></textarea>
+<input id="message-input" textarea cols="42" rows="5" tabindex="4"></input>
+<p id="message-validation">Enter Message</p>
             </div>
           <br>
             <div class="form-group">
             <input class="button" type="submit">
             </div> 
+        </div>
         </form>
+    
             </section>
         
         

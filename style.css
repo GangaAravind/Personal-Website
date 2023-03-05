@@ -218,3 +218,15 @@ footer{
     text-align: center;
 }
 
+ .box card card-1{
+    text-align: center;
+
+} 
+#know-more{
+    display:none;
+}
+#name-validation,#email-validation,#message-validation{
+    color: red;
+    font-size: 14px;
+    display: none;
+}
